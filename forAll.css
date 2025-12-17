@@ -48,10 +48,10 @@ body {
 img {
   border-radius: 50%;
   border: 3px solid #007bff;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   object-fit: cover;
-  height: 110px;
-  width: 110px;
+  height: 150px;
+  width: 150px;
 }
 .skillholder {
   text-align: center;
@@ -92,8 +92,8 @@ img {
   padding: 10px;
   border: none;
   border-radius: 20px;
-  width: 400px;
-  height: 300px;
+  width: 600px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,11 +124,50 @@ footer {
 }
 .social {
   margin-top: 30px;
+  font-size: 30px;
 }
 .social a {
   text-decoration: none;
   color: black;
   margin: 16px;
+}
+.social a:hover {
+  border-bottom: 3px solid #007bff;
+  border-radius: 10px;
+}
+.skillh1 {
+  text-shadow: 1px 1px 1px 1px gray;
+  color: rgb(19, 55, 57);
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.h1 {
+  color: #007bff;
+  font-weight: bold;
+  font-size: 30px;
+}
+.aboutme {
+  text-align: left;
+  font-size: 20px;
+}
+@media screen and (max-width: 600px) {
+  .social {
+    font-size: 20px;
+  }
+  .h1 {
+    font-size: 20px;
+  }
+  .skillh1 {
+    font-size: 20px;
+  }
+  .aboutme {
+    font-size: 14px;
+  }
+  .form {
+    width: 470px;
+  }
 }
 h2 {
   color: goldenrod;
