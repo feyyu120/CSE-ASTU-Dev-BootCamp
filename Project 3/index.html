@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 3</title>
+  </head>
+  <body>
+    <div class="box">
+      <h1 id="text" class="off">OFF</h1>
+      <br />
+      <button class="button" onclick="change()">Change</button>
+    </div>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        background: linear-gradient(
+          to right bottom,
+          rgb(64, 35, 180),
+          rgb(57, 114, 200)
+        );
+        height: 400px;
+        width: 50%;
+        margin-top: 50px;
+        border: none;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0 2px 3px 2px rgb(145, 65, 78);
+      }
+      .button {
+        background-color: rgb(59, 63, 180);
+        box-shadow: 0 1px 2px 1px rgb(169, 103, 114);
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+
+        color: white;
+        margin: 0;
+        cursor: pointer;
+      }
+      #text {
+        font-size: 20px;
+        color: white;
+        margin-top: 30px;
+        text-align: center;
+        padding: 10px;
+        width: 70px;
+        border-radius: 3px;
+        margin: 0;
+      }
+      #text.on {
+        background-color: rgb(40, 142, 40);
+      }
+      #text.off {
+        background-color: brown;
+      }
+      @media screen and (max-width: 500px) {
+        h1 {
+          font-size: 15px;
+        }
+        .box {
+          width: 80%;
+          height: 350px;
+        }
+      }
+    </style>
+    <script>
+      let text = document.getElementById("text");
+      function change() {
+        if (text.textContent === "OFF") {
+          text.classList.remove("off");
+          text.classList.toggle("on");
+          text.textContent = "ON";
+        } else {
+          text.classList.remove("on");
+          text.classList.toggle("off");
+          text.textContent = "OFF";
+        }
+      }
+    </script>
+  </body>
+</html>
