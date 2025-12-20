@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project 4</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <h1>To do list App</h1>
+    <div class="container">
+      <h4>Number of Tasks: <span id="count">0</span></h4>
+      <h5>Completed: <span id="completed">0</span></h5>
+      <div class="taskholder">
+        <span id="message">There is no Task yet!</span>
+        <ul id="listholder"></ul>
+      </div>
+      <div class="saveClear">
+        <button id="clear" class="clear" onclick="Clear()">
+          Clear <i class="fa-regular fa-trash-can"></i>
+        </button>
+        <button id="save">Save <i class="fa-regular fa-bookmark"></i></button>
+      </div>
+      <div class="taskinput">
+        <h2 style="color: white; font-weight: bold; margin-bottom: 10px">
+          Add Your Tasks
+        </h2>
+        <input type="text" id="input" placeholder="Enter your task here" />
+        <button id="addbtn" class="add" onclick="addTask()">
+          Add Task<i class="fa-solid fa-upload"></i>
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
