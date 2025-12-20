@@ -6,6 +6,7 @@
 html,
 body {
   height: 100%;
+  margin: 0;
 }
 .header {
   display: flex;
@@ -35,7 +36,7 @@ body {
   align-items: center;
   text-align: center;
   margin-top: 20px;
-  min-height: 87vh;
+  min-height: 100vh;
 }
 .insideprofile {
   flex: 1;
@@ -52,8 +53,10 @@ img {
   text-align: center;
   min-height: 100vh;
 }
-.card {
+.insideskill {
   flex: 1;
+}
+.card {
   margin: 10px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -79,6 +82,10 @@ img {
   justify-content: center;
   align-items: center;
   margin: 20px;
+  min-height: 100vh;
+}
+.insidecontact {
+  flex: 1;
 }
 
 .form {
@@ -114,7 +121,6 @@ button {
   height: 40px;
 }
 footer {
-  bottom: 0;
   font-size: 11px;
 }
 .social {
@@ -171,6 +177,11 @@ h2 {
   }
   .form {
     width: 470px;
+  }
+}
+@media (min-width: 700px) {
+  .skillholder {
+    min-height: 80vh;
   }
 }
 @media screen and (max-width: 480px) {
