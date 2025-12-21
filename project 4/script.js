@@ -33,11 +33,11 @@ function addTask() {
   const btn1 = document.createElement("button");
   const editbtnt = document.createElement("button");
 
-  btn.textContent = " delete";
+  btn.textContent = " ❌ ";
   btn.classList.add("remove");
   btn1.textContent = "⚠️Complete";
   btn1.classList.add("complete");
-  editbtnt.textContent = "edit";
+  editbtnt.textContent = "✏️";
   editbtnt.classList.add("edit");
   list.textContent = text;
   list.style.fontSize = "18px";
@@ -64,20 +64,20 @@ function addTask() {
     }
   };
   btn1.onclick = () => {
-    if (btn1.textContent === "Completed") {
+    if (btn1.textContent === "✅completed") {
       btn1.textContent = "⚠️Complete";
       btn1.style.backgroundColor = " rgba(41, 33, 152, 1)";
       todo1--;
       updateCount();
     } else {
-      btn1.textContent = "Completed";
+      btn1.textContent = "✅completed";
       btn1.style.backgroundColor = "green";
       todo1++;
       updateCount();
     }
   };
   editbtnt.onclick = () => {
-    if (btn1.textContent === "Completed") {
+    if (btn1.textContent === "✅completed") {
       alert("The task already completed");
       return;
     }
@@ -115,7 +115,7 @@ save.addEventListener("click", () => {
   for (let i = 0; i < items.length; i++) {
     const completeBtn = items[i].querySelector(".complete");
 
-    if (completeBtn.textContent === "Completed") {
+    if (completeBtn.textContent === "✅completed") {
       const taskText = items[i].firstChild.textContent;
       tasks.push(taskText);
     }

@@ -5,8 +5,9 @@
 }
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to left, rgb(79, 51, 155), rgb(83, 83, 212));
+  background: linear-gradient(to left, rgb(47, 31, 91), rgb(44, 44, 117));
   font-size: 18px;
+  overflow-x: hidden;
 }
 html,
 body {
@@ -17,14 +18,13 @@ h1 {
   font-style: normal;
   font-weight: bold;
   color: #cbc3c9;
+  font-size: 30px;
 }
 .container {
   background-color: transparent;
-  background-size: cover;
-  background-repeat: no-repeat;
   max-width: 1024px;
   padding: 20px;
-  box-shadow: 0 2px 3px 2px rgb(172, 72, 172);
+  box-shadow: 0 1px 2px 1px rgb(116, 58, 116);
   border-radius: 8px;
   margin: 0 auto;
   display: flex;
@@ -32,20 +32,22 @@ h1 {
   align-items: center;
   justify-content: center;
   width: 100%;
-  gap: 30px;
-  height: 93vh;
+  gap: 20px;
+  height: 100vh;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 h4 {
-  margin-left: -150px;
-  margin-top: -475px;
+  margin-left: -250px;
+  margin-top: -400px;
   position: absolute;
   color: rgb(227, 211, 211);
   z-index: 999;
 }
 h5 {
-  margin-right: -150px;
-  margin-top: -475px;
+  margin-right: -250px;
+  margin-top: -400px;
   position: absolute;
   color: rgb(222, 218, 218);
   z-index: 999;
@@ -55,10 +57,9 @@ h5 {
   overflow-x: auto;
   margin-top: 20px;
   padding: 20px;
-  box-shadow: 0 1px 2px 1px palevioletred;
+  box-shadow: 0 1px 2px 1px rgb(123, 60, 80);
   display: flex;
   flex-direction: column;
-
   width: 100%;
   height: 300px;
   row-gap: 10px;
@@ -73,7 +74,7 @@ h5 {
   font-size: 20px;
 }
 .remove {
-  background-color: crimson;
+  background-color: transparent;
   border: none;
   color: white;
   padding: 7px;
@@ -81,6 +82,7 @@ h5 {
   border-radius: 5px;
   cursor: pointer;
   margin: 5px;
+  font-size: 15px;
 }
 .saveClear {
   display: flex;
@@ -109,7 +111,7 @@ h5 {
 }
 
 #save {
-  background-color: rgb(21, 116, 58);
+  background-color: rgb(50, 85, 63);
 }
 
 .complete {
@@ -120,17 +122,18 @@ h5 {
   text-align: center;
   border-radius: 5px;
   cursor: pointer;
-  margin: 5px;
+  margin: 3.5px;
 }
 .edit {
-  background-color: rgb(36, 35, 48);
+  background-color: transparent;
+  font-size: 25px;
   border: none;
   color: white;
   padding: 7px;
   text-align: center;
   border-radius: 5px;
   cursor: pointer;
-  margin: 5px;
+  margin: 3px;
 }
 .taskinput {
   width: 100%;
@@ -163,7 +166,7 @@ h5 {
 #message {
   text-align: center;
   font-size: 18px;
-  color: #786f6f;
+  color: #ded5d5;
 }
 
 @media screen and (max-width: 600px) {
@@ -181,5 +184,40 @@ h5 {
   #save {
     padding: 5px;
     font-size: 7px;
+  }
+  .container {
+    width: 90%;
+    padding: 10px;
+    gap: 10px;
+  }
+  .taskholder {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .container {
+    width: 90%;
+  }
+  .taskholder {
+    width: 90%;
+  }
+  h4 {
+    margin-left: -400px;
+    font-size: 12px;
+  }
+  h5 {
+    margin-right: -400px;
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h4 {
+    margin-left: -500px;
+    font-size: 18px;
+  }
+  h5 {
+    margin-right: -500px;
+    font-size: 18px;
   }
 }
