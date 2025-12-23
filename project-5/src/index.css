@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 30px;
+  color: white;
+  background: linear-gradient(to right, rgb(98, 61, 165), rgb(54, 54, 112));
+}
+.navLink {
+  text-decoration: none;
+  color: white;
+}
+.navLink.active {
+  border-bottom: 3px solid #007bff;
+}
+.light {
+  background: linear-gradient(to bottom, rgb(165, 137, 165), rgb(124, 97, 179));
+  color: #eee6e6;
+  min-height: 100vh;
+  background-image: url("./assets/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dark {
+  background-image: url("./assets/background4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  color: #ffffff;
+  min-height: 100vh;
+}
+.themebtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  color: white;
+}
+.inputTaker {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.input {
+  display: flex;
+  gap: 7px;
+  width: 60%;
+}
+.inputTaker input {
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+  border: 0.01px solid gray;
+  width: 100%;
+}
+.inputTaker input:focus {
+  box-shadow: 0 1px 0.5px 0.5px #007bff;
+}
+.inputTaker button {
+  color: white;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+.taskHolder {
+  box-shadow: 0 0.2px 2px 1px rgb(218, 205, 209);
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 80%;
+  height: 200px;
+  overflow-y: auto;
+
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.taskHolder .list {
+  margin: 10px;
+  list-style: none;
+}
+ul {
+  text-align: center;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+  color: gray;
+  font-size: 16px;
+}
+.editInput {
+  outline: none;
+}
+.delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+
+  margin: 5px;
+}
+.edit {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  margin: 5px;
+}
+.list {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.list.done {
+  color: rgb(240, 232, 232);
+  background-color: #44714f;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.clear {
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+  background-color: rgb(147, 63, 81);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.statics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 0 0.2px 2px 1px rgb(170, 165, 167);
+  width: 80%;
+  margin-top: 30px;
+  right: 50%;
+  left: 50%;
+  transform: translateX(10%);
+  padding: 20px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 500px) {
+  nav {
+    font-size: 20px;
+  }
+  .taskHolder {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .input {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 780px) {
+  .input {
+    width: 40%;
+  }
+}
