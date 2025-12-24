@@ -4,10 +4,11 @@ import "./index.css";
 import Header from "./Header.jsx";
 import Home from "./Home.jsx";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import "./assets/background.jpg";
+import { useAtom } from "jotai";
+import { darkAtom } from "./store.js";
 
 function App() {
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useAtom(darkAtom);
   return (
     <>
       <div className="App">

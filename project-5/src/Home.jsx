@@ -2,6 +2,14 @@ import React, { useState } from "react";
 import { useAtom } from "jotai";
 import { taskAtom } from "./store";
 import "./index.css";
+import {
+  FaTrash,
+  FaEdit,
+  FaPlus,
+  FaHome,
+  FaCheckSquare,
+  FaCheck,
+} from "react-icons/fa";
 
 export const InputTaker = ({ input, setInput, Add }) => {
   return (
@@ -16,7 +24,9 @@ export const InputTaker = ({ input, setInput, Add }) => {
           }
         }}
       />
-      <button onClick={Add}>➕</button>
+      <button onClick={Add}>
+        <FaPlus />
+      </button>
     </>
   );
 };
@@ -83,8 +93,13 @@ export default function Home() {
 
           <ul>
             {task.map((item) => (
-              <li key={item.id} className={`list ${item.done ? "done" : ""}`}>
+              <li
+                key={item.id}
+                className={`list ${item.done ? "done" : ""}`}
+                onDoubleClick={() => Edit(item.id)}
+              >
                 <input
+                  className="checkbox"
                   type="checkbox"
                   checked={item.done}
                   onChange={() =>
@@ -101,17 +116,18 @@ export default function Home() {
                     className="editInput"
                     value={item.text}
                     onChange={(e) => UpdateText(item.id, e.target.value)}
+                    onBlur={() => Edit(item.id)}
                   />
                 ) : (
                   <span>{item.text}</span>
                 )}
 
                 <button className="edit" onClick={() => Edit(item.id)}>
-                  ✏️
+                  <FaEdit />
                 </button>
 
                 <button className="delete" onClick={() => Delete(item.id)}>
-                  ❌
+                  <FaTrash />
                 </button>
               </li>
             ))}

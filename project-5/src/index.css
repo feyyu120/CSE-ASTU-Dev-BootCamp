@@ -13,31 +13,24 @@ nav {
   justify-content: space-around;
   font-size: 30px;
   color: white;
-  background: linear-gradient(to right, rgb(98, 61, 165), rgb(54, 54, 112));
+  background: linear-gradient(to right, rgb(101, 39, 107), rgb(120, 50, 101));
 }
 .navLink {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
+  margin-top: 5px;
 }
 .navLink.active {
   border-bottom: 3px solid #007bff;
 }
 .light {
-  background: linear-gradient(to bottom, rgb(165, 137, 165), rgb(124, 97, 179));
+  background: linear-gradient(to bottom, rgb(73, 78, 144), rgb(79, 31, 176));
   color: #eee6e6;
   min-height: 100vh;
-  background-image: url("./assets/background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .dark {
-  background-image: url("./assets/background4.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
+  background-color: rgb(67, 65, 65);
   color: #ffffff;
   min-height: 100vh;
 }
@@ -47,6 +40,9 @@ nav {
   cursor: pointer;
   font-size: 25px;
   color: white;
+}
+.headerIcon {
+  margin-bottom: -5px;
 }
 .inputTaker {
   margin: 0 auto;
@@ -109,7 +105,7 @@ h2 {
   text-align: center;
   margin-top: 20px;
   font-style: italic;
-  color: gray;
+  color: rgb(166, 160, 160);
   font-size: 16px;
 }
 .editInput {
@@ -120,7 +116,7 @@ h2 {
   border: none;
   cursor: pointer;
   font-size: 20px;
-
+  color: #ffffff;
   margin: 5px;
 }
 .edit {
@@ -169,6 +165,9 @@ h2 {
   transform: translateX(10%);
   padding: 20px;
   border-radius: 10px;
+}
+.checkbox {
+  transform: scale(1.5);
 }
 @media screen and (max-width: 500px) {
   nav {

@@ -10,7 +10,7 @@ function Statics() {
 
   return (
     <div className="statics">
-      <h1>Statistics</h1>
+      <h1>Task Statistics</h1>
       <p>Total tasks: {total}</p>
       <p>Completed tasks: {completed}</p>
     </div>
