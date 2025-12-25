@@ -1,3 +1,6 @@
+![photo_3_2025-12-25_11-39-19](https://github.com/user-attachments/assets/cae53f1f-6539-4c7c-a3ef-c0a199aa2fc9)
+![photo_2_2025-12-25_11-39-19](https://github.com/user-attachments/assets/bfe22ced-16cc-493b-b850-3690130aef33)
+![photo_1_2025-12-25_11-39-19](https://github.com/user-attachments/assets/18745c77-d684-4053-8c38-4f8946a091fb)
 
 # React + Vite
 
