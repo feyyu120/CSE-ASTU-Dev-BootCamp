@@ -1,12 +1,12 @@
-project-1dev.netlify.app
+https://project-1dev.netlify.app/
 
-projecr-2dev.netlify.app
+https://projecr-2dev.netlify.app/
 
-project-3dev.netlify.app
+https://project-3dev.netlify.app/
 
-project-4dev.netlify.app
+https://project-4dev.netlify.app/
 
-project-5dev.netlify.app
+https://project-5dev.netlify.app/
 
 
 
