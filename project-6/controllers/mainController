@@ -1,0 +1,37 @@
+exports.home = (req, res) => {
+  res.send(
+    "Welcome to  backend. you can see contact /contact and about /about"
+  );
+};
+
+exports.about = (req, res) => {
+  res.json({
+    Name: "FEYSEL YASSIN",
+    Year: "second year SOEE",
+    message: "This is My first express server .",
+  });
+};
+
+exports.contact = (req, res) => {
+  res.json({
+    Telegram: "@feyyumike",
+    Email: "thehoper@gmail.com",
+    phone: "+2519501868",
+  });
+};
+
+exports.echo = (req, res) => {
+  const data = req.body;
+
+  if (!data || Object.keys(data).length === 0) {
+    return res.status(400).json({
+      success: false,
+      message: "No JSON data provided",
+    });
+  }
+
+  res.json({
+    success: true,
+    receivedData: data,
+  });
+};
