@@ -6,10 +6,9 @@ const PORT = 5000;
 
 app.use(express.json());
 
-// routes
+
 app.use("/", mainRoutes);
 
-// 404 handler (must be LAST)
 app.use((req, res) => {
   res.status(404).json({
     success: false,
